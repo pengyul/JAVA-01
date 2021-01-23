@@ -29,7 +29,7 @@ public class MyClassLoader extends ClassLoader{
 
     @Override
     protected Class<?> findClass(String name) throws ClassNotFoundException {
-        Path path = Paths.get("Week_01/Hello.xlass");
+        Path path = Paths.get("Week_01/WednesdayQuestion2/Hello.xlass");
         try {
             byte[] data = Files.readAllBytes(path); //获取文件所有字节
             data = convert(data);
